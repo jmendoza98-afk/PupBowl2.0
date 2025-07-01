@@ -1,0 +1,54 @@
+/* main app container */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: grid;
+    gap: 1rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: 100%;
+    max-height: 40vh;
+}
+
+@media (width >= 768px) {
+    main{
+        padding: 0.5rem;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+/* doggy */
+.doggy{
+    display: grid;
+    gap: 1rem;
+    padding: 0.5rem;
+    list-style: none;
+}
+
+.doggy a {
+    display: flex;
+    gap: 1ch;
+    align-items: center;
+    border: 2px dashed black;
+    border-radius: 0.5rem;
+    padding: 0.24rem;
+}
+
+.avatar{
+    margin: 0;
+    width: 3rem;
+}
+
+.avatar img {
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
